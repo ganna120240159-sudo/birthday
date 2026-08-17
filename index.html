@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Transmission to Loki</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="screen">
+
+    <!-- SCREEN 1 -->
+    <section id="welcome" class="panel active">
+      <div class="terminal">
+        <p class="green">SYSTEM // TEMPORAL COMMUNICATION UNIT</p>
+        <h1>📡 INCOMING TRANSMISSION</h1>
+        <div class="line"></div>
+
+        <p>SOURCE: <span>YEAR 2040</span></p>
+        <p>RECIPIENT: <span>LOKI</span></p>
+
+        <p class="warning">⚠ WARNING ⚠</p>
+        <p>A message has been detected from the future.</p>
+
+        <button onclick="startTransmission()">RECEIVE TRANSMISSION</button>
+      </div>
+    </section>
+
+    <!-- SCREEN 2 -->
+    <section id="connection" class="panel">
+      <div class="terminal">
+        <h2>CONNECTING TO 2040...</h2>
+        <div class="progress">
+          <div id="progressBar"></div>
+        </div>
+        <p id="progressText">0%</p>
+
+        <div id="connectionResult" class="hidden">
+          <p class="green">CONNECTION ESTABLISHED ✓</p>
+          <p>IDENTITY CONFIRMED: <strong>LOKI</strong></p>
+          <p>STATUS: <strong> Still freinds.still fixing my mess.</strong></p>
+          <p class="small">Unfortunately.</p>
+          <button onclick="showAnalysis()">CONTINUE</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- SCREEN 3 -->
+    <section id="analysis" class="panel">
+      <div class="terminal">
+        <p class="green">FUTURE FRIENDSHIP DATABASE</p>
+        <h2>FRIENDSHIP ANALYSIS</h2>
+
+        <p>Friendship duration: <strong>2 YEARS ✓</strong></p>
+
+        <p>LOKI — WISDOM</p>
+        <div class="bar"><div class="loki-bar"></div></div>
+        <p>90%</p>
+
+        <p>gogi — WISDOM</p>
+        <div class="bar"><div class="weird-bar"></div></div>
+        <p>10%</p>
+
+        <p class="warning">SYSTEM WARNING:</p>
+        <p>Something went wrong.</p>
+
+        <button onclick="showMemory()">VIEW RECOVERED DATA</button>
+      </div>
+    </section>
+
+    <!-- SCREEN 4 -->
+    <section id="memory" class="panel">
+      <div class="terminal">
+        <p class="green">📁 RECOVERED MEMORY FILES</p>
+
+        <div class="memory-card">
+          <img class="real-photo" src="images/photo1.jpeg" alt="Memory 1">
+          <p>Friendship.exe has been running for 2 years.</p>
+        </div>
+
+        <div class="memory-card">
+          <img class="real-photo" src="images/PHOTO2.jpeg" alt="Memory 2">
+          <p>Evidence confirms Loki was the responsible one.</p>
+        </div>
+
+        <!-- To add your own photos:
+        <img class="real-photo" src="images/photo1.jpg">
+        -->
+
+        <button onclick="showMessage()">OPEN MESSAGE</button>
+      </div>
+    </section>
+
+    <!-- SCREEN 5 -->
+    <section id="message" class="panel">
+      <div class="terminal message-box">
+        <p class="green">📡 MESSAGE_FROM_THE_PAST.txt</p>
+        <div class="line"></div>
+
+        <!-- WRITE YOUR MESSAGE BETWEEN THE QUOTES BELOW -->
+        <p id="messageText"></p>
+
+        <button onclick="showConclusion()">CONTINUE</button>
+      </div>
+    </section>
+
+    <!-- SCREEN 6 -->
+    <section id="conclusion" class="panel">
+      <div class="terminal">
+        <p class="green">ANALYZING FRIENDSHIP...</p>
+
+        <div class="result">
+          <p>LOKI = THE NORMAL ONE</p>
+          <p>YOU = THE WEIRD ONE</p>
+        </div>
+
+        <p>Conclusion:</p>
+        <p>Nobody knows how this friendship survived.</p>
+
+        <p>Probability of surviving another 2 years:</p>
+        <h2>99.9%</h2>
+
+        <p class="small">Reason: Unknown.</p>
+
+        <button onclick="finish()">END TRANSMISSION</button>
+      </div>
+    </section>
+
+    <!-- FINAL -->
+    <section id="final" class="panel">
+      <div class="terminal final-message">
+        <div class="big">🎂</div>
+        <h1>HAPPY BIRTHDAY, LOKI</h1>
+        <p>Transmission complete.</p>
+        <p class="green">Connection terminated.</p>
+        <p class="small">See you in 2040.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
